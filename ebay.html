@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.ebayimg.com/images/g/s5wAAOSwzV1lX46O/s-l140.webp" alt="logo">
+        </div>
+        <!-- <div class="primary-nav">
+            <nav>
+                <ul>
+                    <li>SHOP</li>
+                    <li>CUSTOM</li>
+                    <li>OUR STORY</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </div> -->
+    </header>
+    <main>
+        <div class="product">
+            <div class="product-gallery">
+                <img src="https://i.ebayimg.com/images/g/3EUAAOSw1BZlgeeD/s-l1600.jpg" alt="product">
+                
+            </div>
+            <div class="product-info">
+                <div class="title">
+                    <h2>Adidas Samba OG Low White Black Gum</h2>
+                </div>
+                <div class="product-item">
+                    <p>
+                       
+                    </p>
+                </div>
+                <div class="product-description">
+                    <p>Description</p>
+                <ul>
+                    <li>Condition: Used</li>  
+                    <li>Colorway: White/Black/Gum </li> 
+                    <li>Size: US Men's 10</li> 
+                </ul>
+                </div>
+            </div>
+        </div>
+       
+    </main>
+    
+    <footer>
+        <div class="footer-nav">
+
+        </div>
+        <div class="copyright">
+            <h5>Beurre Noir &copy 2023 All Rights Reserved</h5>
+        </div>
+      
+    </footer>
+    
+    <!-- Style Sheet -->
+    
+    <style>
+        body {
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    margin: 0;
+    }
+    
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+    width: 70%;
+    }
+    
+    .logo {
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header img {
+    height: 50px;
+    width: 100px;
+    margin: 20px 0;
+    }
+
+    .primary-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid lightgray;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        height: 50px;
+    }
+
+    nav li {
+        padding: 25px;
+    }
+    
+    main {
+        margin: 0 auto 40px auto;
+        margin-bottom: 40px;
+        width: 70%;
+    }
+    
+    
+    img {
+    width: 500px;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    h5 {
+        margin: 0;
+    }
+    
+    .product {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 48px;
+    }
+    
+    .product-info {
+        width: 500px;
+    }
+    
+    .product-gallery img {
+    border: 2px solid lightgray;
+    margin: 10px 0;
+    }
+    
+    .product-description {
+        margin-top: 20px;
+        border-top: 1px solid lightgray;
+    }
+    
+    .product-description p {
+        text-transform: uppercase;
+    }
+    
+    .product-description ul {
+        padding: 0;
+        list-style-type: none;
+        line-height: 50px;
+    }
+    
+    @media only screen and (max-width: 1048px) {
+      .product-gallery img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      footer {
+        margin-bottom: 0;
+        width: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 425px) {
+        main {
+            margin: auto;
+        }
+    
+        .product {
+            margin: 0 20px;
+        }
+    
+        img {
+            width: 80%;
+        }
+    }
+    
+    .title {
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+
+    .title h2 {
+        font-weight: 400;
+    }
+
+    #related-products {
+        background-color: #ececeb;
+        height: 550px;
+    }
+    
+    .related-products {
+        display: flex;
+        
+        flex-direction: column;
+        margin: 50px 0;
+        border-top: 1px solid lightgray;
+        height: 500px;
+    }
+    
+    .related-products h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.8em;
+    }
+    
+    .related-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+        height: 50%;
+    }
+    
+    .related-items img {
+     max-width: 300px;
+     margin: 20px;
+    }
+    
+    .product-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 380px;
+    }
+    
+    .product-card-info {
+        padding: 0 14px;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 2px;
+        max-width: 300px;
+    }
+
+    .copyright {
+        padding: 20px;
+        color: #1c1c1ca6;
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f5f5f5;
+        height: 12rem;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px auto;
+        width: 70%;
+    }
+    
+    </style>
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
