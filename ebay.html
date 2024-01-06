@@ -28,26 +28,33 @@
     <main>
         <div class="product">
             <div class="product-gallery">
-                <img src="https://i.ebayimg.com/images/g/3EUAAOSw1BZlgeeD/s-l1600.jpg" alt="product">
+                <img src="https://i.ebayimg.com/images/g/C6UAAOSwbYFllF90/s-l1600.jpg" alt="product">
                 
             </div>
             <div class="product-info">
                 <div class="title">
-                    <h2>Adidas Samba OG Low White Black Gum</h2>
+                    <h2>925 Sterling Silver 3mm Tennis Necklace Simulated Diamonds</h2>
                 </div>
                 <div class="product-item">
                     <p>
-                       
+                        Elevate your jewelry collection with this stunning 925 sterling silver tennis Necklace from the renowned brand Beurre Noir. The necklace features a single row of sparkling simulated diamonds (total carat weight of 3) in a stylish and elegant design. The round shape and slide closure make it suitable for any occasion.
                     </p>
                 </div>
-                <div class="product-description">
+                <button class="product-description" type="button" aria-label="specs">
                     <p>Description</p>
-                <ul>
-                    <li>Condition: Used</li>  
-                    <li>Colorway: White/Black/Gum </li> 
-                    <li>Size: US Men's 10</li> 
-                </ul>
-                </div>
+                    <div class="arrow">
+                        <span></span>
+                    </div>
+                </button>    
+                    <div class="product-specs">
+                        <ul>
+                            <li>Material: 925 Sterling Silver</li>  
+                            <li>Width: 3mm </li> 
+                            <li>Length: 18" inches</li> 
+                            <li>Stone: 5A Cubic Zirconia</li>  
+                            <li>Clasp: Secure spring clasp with 2 sided safety clasps</li> 
+                        </ul>
+                    </div>
             </div>
         </div>
        
@@ -84,6 +91,10 @@
     background-color: white;
     z-index: 1;
     width: 70%;
+    }
+
+    ul {
+        list-style-type: none;
     }
     
     .logo {
@@ -139,6 +150,8 @@
         margin: 0;
     }
     
+
+    /* Main */
     .product {
     background-color: white;
     display: flex;
@@ -146,6 +159,7 @@
     justify-content: center;
     gap: 70px;
     margin-top: 48px;
+    
     }
     
     .product-info {
@@ -158,8 +172,15 @@
     }
     
     .product-description {
-        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
         border-top: 1px solid lightgray;
+        width: 100%;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent
     }
     
     .product-description p {
@@ -170,6 +191,33 @@
         padding: 0;
         list-style-type: none;
         line-height: 50px;
+    }
+
+    .product-item {
+        border-bottom: 1px solid darkgray;
+    }
+ 
+    .arrow {
+        position: relative;
+        top: 12px;
+    
+    }
+
+    .arrow span {
+        border-left: 0.2rem solid lightgray;
+        border-bottom: 0.2rem solid lightgray;
+        width: .7rem;
+        height: .7rem;
+        transform: rotate(315deg);
+        display: block;
+        border-radius: 2px;
+        position: relative;
+        top: 40%;
+        right: 50%;
+    }
+
+    .product-specs {
+        border-bottom: 1px solid lightgray;
     }
     
     @media only screen and (max-width: 1048px) {
